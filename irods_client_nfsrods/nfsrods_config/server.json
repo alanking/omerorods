@@ -9,7 +9,7 @@
 
     "irods_client": {
         "zone": "tempZone",
-        "host": "icat.example.org",
+        "host": "irods-catalog-provider",
         "port": 1247,
         "default_resource": "demoResc",
         "ssl_negotiation_policy": "CS_NEG_REFUSE",
