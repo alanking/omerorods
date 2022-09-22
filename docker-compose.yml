@@ -13,15 +13,15 @@ services:
         depends_on:
             - irods-catalog
 
-#   irods-client-nfsrods:
-#       image: irods/nfsrods:2.1.0
-#       ports:
-#           - "2049:2049"
-#       volumes:
-#           - "./irods_client_nfsrods/nfsrods_config:/nfsrods_config:ro"
-#           - "/etc/passwd:/etc/passwd:ro"
-#       depends_on:
-#           - irods-catalog-provider
+    irods-client-nfsrods:
+        image: irods/nfsrods:2.1.0
+        ports:
+            - "2049:2049"
+        volumes:
+            - "./irods_client_nfsrods/nfsrods_config:/nfsrods_config:ro"
+            - "/etc/passwd:/etc/passwd:ro"
+        depends_on:
+            - irods-catalog-provider
 
     omero-db:
         image: postgres:12
